@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: scroll;
+    background-color: beige;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #231F20;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #E7E4D8;
+}
+
+header {
+    background-color: #E7E4D8;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 80px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: cadetblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.custom-section {
+    background-color: #E7E4D8;
+    height: auto;
+    padding-top: 90px;
+}
+
+.custom-content {
+    align-items: center;
+    display: flex;
+}
+
+.custom-left{
+    padding-left: 50px;
+    align-items: center;
+}
+
+.custom-left h2 {
+    color: cadetblue;
+    margin-bottom: 10px;
+}
+
+.custom-left p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+.custom-logo{
+    max-height: 500px;
+}
+
+#analyse-section {
+    padding-top: 70px;
+    padding-left: 50px;
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+#analyse-section h1 {
+    color: cadetblue;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#analyse-section p{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1;
+}
+
+#analyse-section fieldset{
+    margin-right: 90px;
+    border-color: cadetblue;
+    padding-top: 10px;
+}
+
+#analyse-section fieldset legend{
+    font-size: large;
+    font-weight: bold;
+}
+
+#analyse-section .form-group textarea {
+    width: 99%;
+    height: 200px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: justify;
+    background-color: #E7E4D8;
+    border-width: 2px;
+    border-color: cadetblue;
+    resize: none;
+    font-size: 25px;
+}
+
+#analyse-section .form-group {
+    text-align: center;
+}
+
+#analyse-section .form-group button {
+    padding: 10px 20px;
+    color: #231F20;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: cadetblue;
+    background-color: #E7E4D8;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#resultSection p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#result {
+    font-size: 25px;
+    color: black;
+}
+
+.positiveSentiment {
+    font-size: 45px;
+    color: rgb(71, 199, 71);
+    font-weight: bold;
+}
+
+.negativeSentiment {
+    font-size: 45px;
+    color: rgb(233, 94, 94);
+    font-weight: bold;
+}
+
+.neutralSentiment {
+    font-size: 45px;
+    color: rgb(54, 54, 216);
+    font-weight: bold;
+}
+
+#file-upload-section {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 90px;
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+#file-upload-section h1 {
+    color: cadetblue;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#file-upload-section p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#file-upload-form fieldset{
+    border-color: cadetblue;
+    padding-top: 10px;
+}
+
+#file-upload-form fieldset legend{
+    font-size: large;
+    font-weight: bold;
+}
+
+#file-upload-form .form-group {
+    text-align: center;
+}
+
+#file-upload-form .form-group label {
+    font-size: larger;
+}
+
+#file-upload-form .form-group button {
+    padding: 10px 20px;
+    color: #231F20;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: cadetblue;
+    background-color: #E7E4D8;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #E7E4D8;
+    padding: 15px;
+}
+
+.navbar-bottom {
+    text-align: center;
+}
+
+.footer-title {
+    color: #231F20;
+    font-weight: bold;
+    margin: auto;
+}

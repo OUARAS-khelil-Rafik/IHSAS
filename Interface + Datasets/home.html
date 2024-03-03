@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/Logo_arabe.png">
+    <title>موقع احساس (IHSAS)</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#">
+                <div class="logo">
+                    <img src="images/Logo_nav.png" alt="Logo">
+                </div>
+            </a>
+            <ul class="nav-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#analyse-section">SENTENCE ANALYSIS</a></li>
+                <li><a href="#file-upload-section">UPLOAD FILE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="custom-section">
+        <div class="custom-content">
+            <div class="custom-left">
+                <h2>IHSAS : An Online Arabic Sentiment Analyser</h2>
+                <p>
+                    <p>Sentiment analysis is one of the most useful natural language processing applications. There are many papers and systems addressing this task, but most of the work is focused on English. Therefore, we present “IHSAS”, an online system for Arabic sentiment analysis.</p>
+                    <p>The system is based on a machine learning model, which achieves state-of-the-art results on many Arabic dialect datasets. The system provides three-way sentiment classification to one of the classes (Positive, Negative, Neutral).</p>
+                    <p>IHSAS provides many features such as sentiment analysis for a sentence, a file.</p>
+                    <p>IHSAS was created by OUARAS Khelil Rafik at the Faculty of Computer Science of the University of Algiers.</p>
+                </p>
+            </div>
+            <div class="custom-right">
+                <img class="custom-logo" src="images/Logo_arabe.png" alt="Logo">
+            </div>
+        </div>
+    </section>
+
+    <section id="analyse-section">
+        <h1>Sentence Sentiment Analysis</h1>
+        <p>Here, you can check the sentiment of a given sentence.</p>
+        <p>The most recent model will be used to classify your sentence into one of three classes (Positive, Negative, Neutral).</p>
+        <p>To avoid confusion, if your text is a non-Arabic text then the result will be neutral.</p>
+        <br>
+        <fieldset>
+            <legend>INPUT SENTENCE</legend>
+            <div class="form-group">
+                <textarea id="sentence" rows="4" cols="50" placeholder="أكتب النص هنا...." dir="rtl"></textarea>
+                <div>
+                    <button onclick="classifyText()">Get sentiment !</button>
+                    <button onclick="clearText()">Clear Text</button>
+                </div>
+            </div>            
+        </fieldset>
+    </section>
+
+    <div id="resultSection">
+        <p id="result"></p>
+    </div>
+
+    <!-- Existing code above this comment -->
+
+    <section id="file-upload-section">
+        <h1>File Upload</h1>
+        <p>Here you can upload a file that contains tweets, and we will give you back their sentiment.</p>
+        <p>The system will analyze the tweets in the file and will provide a CSV file that contains both the original tweets and their predicted sentiment.</p>
+        <p>The uploaded file should be a '.txt' file with a single tweet per line.</p>
+
+        <form id="file-upload-form">
+            <fieldset>
+                <legend>Uploading a file:</legend>
+                <div class="form-group">
+                    <label for="file">File:</label>
+                    <input type="file" id="file" accept=".txt" />
+                    <br>
+                    <button type="button" onclick="uploadFile()">Upload File</button>
+                    <button type="button" onclick="classifyAndDownload()">Get sentiment and Download CSV</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+<!-- Existing code below this comment -->
+
+
+    <footer>
+        <nav class="navbar-bottom">
+            <p class="footer-title">©2024 by OUARAS Khelil Rafik</p>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
